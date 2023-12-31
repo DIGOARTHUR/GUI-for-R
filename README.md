@@ -63,6 +63,13 @@ https://dev.to/envoy_/150-badges-for-github-pnk
   <br>
 <div align="center">
 	
+<i>`based in`</i> : 
+
+<cite>[Dalgaard, Peter. "A primer on the R-Tcl/Tk package." R News 1.3 (2001): 27-31.][3]</cite>
+
+<i>and</i>
+
+<cite>[midrangeMCP][4]</cite>
 
 
 </div>
@@ -117,13 +124,23 @@ https://github.com/DIGOARTHUR/GUI-for-R/assets/59892368/acc87e71-0f6d-49bb-b648-
 
 > Tcl/Tk is a combination of a scripting language and a toolkit for graphical user interfaces. Since version 1.1.0, R has had a tcltk package to access the Tk
 > toolkit, replacing Tcl code with R function calls <cite>[(Dalgaard, 2001)][2]</cite>. There are still some design problems in it, but it is quite useful already in its current state.
+> 
+> -- <cite>[Dalgaard, Peter. "A primer on the R-Tcl/Tk package." R News 1.3 (2001): 27-31.][3]</cite>
 
 
 
+
+   <!-------------------------------------------------------------------->
+   <!------------------------------------EXAMPLE APLICATION--------------------->
+   <!----  --------------------------------------------------------------->
+
+
+   <!-------------------------------------------------------------------->
+   <!------------------------------------REFERENCES--------------------->
+   <!----  --------------------------------------------------------------->
+   
 [1]: https://www.jstatsoft.org/article/view/v014i09
 [2]: https://www.r-project.org/conferences/DSC-2001/Proceedings/Dalgaard.pdf
-
-
-
-
+[3]: https://cran.uni-muenster.de/doc/Rnews/Rnews_2001-3.pdf#page=27
+[4]: https://bendeivide.github.io/midrangeMCP/
 
