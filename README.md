@@ -93,7 +93,7 @@ https://dev.to/envoy_/150-badges-for-github-pnk
    <!------------------------------------DESCRIPTION--------------------->
    <!---write here : talk a little about project: what's does, example.  -->
    
-# <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622497-164365e8-f6b0-4f40-bc75-a0ed4da6059b.png">  Sobre a aplicação 
+# <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622497-164365e8-f6b0-4f40-bc75-a0ed4da6059b.png">  About Application
 ---
 > The creation of graphical interfaces is to facilitate user interaction with the resources that programming brings. 
 > In the R language, there is a library called tcl/tk responsible for generating widgets.
@@ -135,21 +135,62 @@ https://dev.to/envoy_/150-badges-for-github-pnk
 
    ## <img  alt="skills"  height="40" src="https://github.com/DIGOARTHUR/GUI-for-R/assets/59892368/63153535-d412-4b54-ac45-edd38fd87b44">  Example Application
 
-   <div align="center">
-<img height="350px" alt="bashftreactgit" title="bashftreactgit" src="https://github.com/DIGOARTHUR/GUI-for-R/assets/59892368/dbafe7bd-dbe4-4fc4-85d5-95734783ad26" />
+
+
+	
+### Simple GUI application
+<div align="center">
+<img height="350px" alt="bashftreactgit" title="bashftreactgit" src="https://github.com/DIGOARTHUR/GUI-for-R/assets/59892368/34f9d034-1f3f-45e4-86b4-165f9c5c24f5" />
 </div>
 
-```R
-# Main Window
-base <- tktoplevel(padx=10, pady=10)
-tkwm.geometry(base, "600x400")
-# Change title using tk window manager
-tkwm.title(base,'Test App')
-# Main Window Frame
-main_frame <- tkframe(base, relief="sunken", borderwidth = 1)
+ ```R
+tt <- tktoplevel()
+tkwm.title(tt,'Simple GUI application')
+tkwm.geometry(tt, "600x400")
+lbl <- tklabel(tt, text="Hello, World!")
+tkpack(lbl)
 ```
 
 ----
+
+### Simple GUI application and Button
+<div align="center">
+<img height="350px" alt="bashftreactgit" title="bashftreactgit" src="https://github.com/DIGOARTHUR/GUI-for-R/assets/59892368/79f3106d-ab41-4fb2-bedd-ed8ec1342be4" />
+</div>
+
+ ```R
+library(tcltk)
+tt <- tktoplevel()
+tkwm.title(tt,'Simple GUI application and Button')
+lbl <- tklabel(tt, text="Hello, World!")
+tkpack(lbl)
+but <- tkbutton(tt, text="OK")
+tkpack(but)
+
+```
+
+----
+
+### Widget Directions
+<div align="center">
+<img height="350px" alt="bashftreactgit" title="bashftreactgit" src="https://github.com/DIGOARTHUR/GUI-for-R/assets/59892368/8ee56c55-3b3b-4f99-a5c7-12f5c04693ef" />
+</div>
+
+ ```R
+tkdestroy(tt) # get rid of old example
+tt <- tktoplevel()
+tkwm.title(tt,'Widget Directions')
+edge <- c("top","right","bottom","left")
+buttons <- lapply(1:4,
+                  function(i) tkbutton(tt, text=edge[i]))
+for ( i in 1:4 )
+  tkpack(buttons[[i]], side=edge[i],
+         fill="both")
+```
+
+----
+
+### Creating menus
 
 <div align="center">
 <img height="350px" alt="bashftreactgit" title="bashftreactgit" src="https://github.com/DIGOARTHUR/GUI-for-R/assets/59892368/1e7252b4-18c7-49ce-9014-e485c082cea6" />
@@ -169,8 +210,10 @@ for ( i in c("red", "blue", "green"))
   tkadd(m, "radio", label=i, variable="color",
         value=i)
 ```
-
 ----
+
+
+### A simple application: Scripting widgets
 
 <div align="center">
 <img height="350px" alt="bashftreactgit" title="bashftreactgit" src="https://github.com/DIGOARTHUR/GUI-for-R/assets/59892368/a5523226-ca41-4b74-8374-13ea522ab012" />
@@ -232,85 +275,67 @@ widgets
 
 ```
 
-----
-
-
-
-<div align="center">
-<img height="350px" alt="bashftreactgit" title="bashftreactgit" src="https://github.com/DIGOARTHUR/GUI-for-R/assets/59892368/8e604130-ea29-4bbe-b52f-907316721fb4" />
-</div>
-
- ```R
-t2 <- tktoplevel()
-tkwm.title(t2,'Grid Managers, Positions')
-heading <- tklabel(t2, text="Registration form")
-l.name <- tklabel(t2, text="Name")
-l.age <- tklabel(t2, text="Age")
-e.name <- tkentry(t2, width=30)
-e.age <- tkentry(t2, width=3)
-tkgrid(heading, columnspan=2)
-tkgrid(l.name, e.name)
-tkgrid(l.age, e.age)
-tkgrid.configure(e.name, e.age, sticky="w")
-tkgrid.configure(l.name, l.age, sticky="e")
-
-```
-
 
 ----
 
-<div align="center">
-<img height="350px" alt="bashftreactgit" title="bashftreactgit" src="https://github.com/DIGOARTHUR/GUI-for-R/assets/59892368/8ee56c55-3b3b-4f99-a5c7-12f5c04693ef" />
+### Canvas  
+
+   <div align="center">
+<img height="350px" alt="bashftreactgit" title="bashftreactgit" src="https://github.com/DIGOARTHUR/GUI-for-R/assets/59892368/84af1954-7682-40b2-bc96-b6f1ddd56a77" />
 </div>
 
- ```R
-tkdestroy(tt) # get rid of old example
-tt <- tktoplevel()
-tkwm.title(tt,'Widget Directions')
-edge <- c("top","right","bottom","left")
-buttons <- lapply(1:4,
-                  function(i) tkbutton(tt, text=edge[i]))
-for ( i in 1:4 )
-  tkpack(buttons[[i]], side=edge[i],
-         fill="both")
-```
+```R
+# Main Window
+base <- tktoplevel(padx=10, pady=10)
+tkwm.geometry(base, "600x400")
+# Change title using tk window manager
+tkwm.title(base,'Canvas')
+# Main Window Frame
+main_frame <- tkframe(base, relief="sunken", borderwidth = 1)
 
+# Canvas
+canvas <- tkcanvas(main_frame)
 
-----
+tkpack(main_frame, canvas, fill = "both", expand=TRUE)
+#tkpack(main_frame, fill = "both", expand=TRUE)
 
-<div align="center">
-<img height="350px" alt="bashftreactgit" title="bashftreactgit" src="https://github.com/DIGOARTHUR/GUI-for-R/assets/59892368/34f9d034-1f3f-45e4-86b4-165f9c5c24f5" />
-</div>
-
- ```R
-tt <- tktoplevel()
-tkwm.title(tt,'Simple GUI application')
-lbl <- tklabel(tt, text="Hello, World!")
-tkpack(lbl)
+tkconfigure(canvas, "-background", "#483D8B")
 ```
 
 
 
 
-----
 
-<div align="center">
-<img height="350px" alt="bashftreactgit" title="bashftreactgit" src="https://github.com/DIGOARTHUR/GUI-for-R/assets/59892368/79f3106d-ab41-4fb2-bedd-ed8ec1342be4" />
-</div>
+  <!-------------------------------------------------------------------->
+   <!------------------------------------MOTIVATION-------------------->
+   <!----  --------------------------------------------------------------->
 
- ```R
-library(tcltk)
-tt <- tktoplevel()
-tkwm.title(tt,'Simple GUI applicatio and Button')
-lbl <- tklabel(tt, text="Hello, World!")
-tkpack(lbl)
-but <- tkbutton(tt, text="OK")
-tkpack(but)
-
-```
+   ## <img  alt="skills"  height="40" src="https://github.com/DIGOARTHUR/GUI-for-R/assets/59892368/5f83a61f-3d98-40cb-8d77-9ac71327baf4">  Motivation
 
 
 
+
+
+   <!-------------------------------------------------------------------->
+   <!------------------------------------REFERENCES-------------------->
+   <!----  --------------------------------------------------------------->
+
+   ## <img  alt="skills"  height="40" src="https://github.com/DIGOARTHUR/GUI-for-R/assets/59892368/63153535-d412-4b54-ac45-edd38fd87b44">  References
+
+   
+<cite>[FOX, J. The R Commander: A Basic-Statistics Graphical User Interface to R. Journal of Statistical Software, [S. l.], v. 14, n. 9, p. 1–42, 2005. DOI: 10.18637/jss.v014.i09.][1]</cite>
+
+<cite>[Dalgaard, P. (2001). The R-tcl/tk interface. In Proceedings of DSC (Vol. 1, No. 2).][2]</cite>
+
+<cite>[Dalgaard, P. (2001). A primer on the R-Tcl/Tk package. R News, 1(3), 27-31.][3]</cite>
+
+<cite>[Ben Deivide and Daniel Furtado (NA). midrangeMCP: Multiples Comparisons Procedures Based on Studentized Midrange and Range Distributions.][4]</cite>
+
+<cite>[Ospina G., J.  (2015). Uso de la librería TCL/TK en el desarrollo de una interfaz gráfica de usuario (GUI) en R. ][5]</cite>
+
+
+
+ 
 
 
 
@@ -322,4 +347,4 @@ tkpack(but)
 [2]: https://www.r-project.org/conferences/DSC-2001/Proceedings/Dalgaard.pdf
 [3]: https://cran.uni-muenster.de/doc/Rnews/Rnews_2001-3.pdf#page=27
 [4]: https://bendeivide.github.io/midrangeMCP/
-
+[5]: https://bibliotecadigital.univalle.edu.co/entities/publication/4207e598-1091-4336-9a3d-263e2050212a
