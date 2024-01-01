@@ -293,6 +293,25 @@ tkpack(lbl)
 
 
 
+----
+
+<div align="center">
+<img height="350px" alt="bashftreactgit" title="bashftreactgit" src="https://github.com/DIGOARTHUR/GUI-for-R/assets/59892368/79f3106d-ab41-4fb2-bedd-ed8ec1342be4" />
+</div>
+
+ ```R
+library(tcltk)
+tt <- tktoplevel()
+tkwm.title(tt,'Simple GUI applicatio and Button')
+lbl <- tklabel(tt, text="Hello, World!")
+tkpack(lbl)
+but <- tkbutton(tt, text="OK")
+tkpack(but)
+
+```
+
+
+
 
 
 
