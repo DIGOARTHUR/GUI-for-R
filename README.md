@@ -322,7 +322,7 @@ PS: I want to thank my Advisor [Ben Dêivide](https://bendeivide.github.io/#abou
    <!------------------------------------REFERENCES-------------------->
    <!----  --------------------------------------------------------------->
 
-   ## <img  alt="skills"  height="40" src="https://github.com/DIGOARTHUR/GUI-for-R/assets/59892368/63153535-d412-4b54-ac45-edd38fd87b44">  References
+   ## <img  alt="skills"  height="40" src="https://github.com/DIGOARTHUR/GUI-for-R/assets/59892368/a69874da-47a1-484a-b128-14632207685f">  References
 
    
 <cite>[FOX, J. The R Commander: A Basic-Statistics Graphical User Interface to R. Journal of Statistical Software, [S. l.], v. 14, n. 9, p. 1–42, 2005. DOI: 10.18637/jss.v014.i09.][1]</cite>
@@ -337,7 +337,8 @@ PS: I want to thank my Advisor [Ben Dêivide](https://bendeivide.github.io/#abou
 
 
 
- 
+
+
 
 
 
