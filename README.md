@@ -105,8 +105,7 @@ https://dev.to/envoy_/150-badges-for-github-pnk
  <!-------------------------------------------------------------------->
 # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/149667468-f228e4e8-c2f0-474d-858d-6b9216f49b2f.png"> Example Interface <!---write here : demonstration of the application layout.  -->
 
-
-https://github.com/DIGOARTHUR/GUI-for-R/assets/59892368/acc87e71-0f6d-49bb-b648-8dae8b3d3350
+<video  src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/293518922-acc87e71-0f6d-49bb-b648-8dae8b3d3350.mp4"></video>
 
 
 
