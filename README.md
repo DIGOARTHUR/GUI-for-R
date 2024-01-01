@@ -69,7 +69,7 @@ https://dev.to/envoy_/150-badges-for-github-pnk
 
 <i>and</i>
 
-<cite>[midrangeMCP][4]</cite>
+<cite>[midrangeMCP][4]</cite> / [Repository](https://github.com/bendeivide/midrangeMCP/)
 
 
 </div>
@@ -312,7 +312,7 @@ tkconfigure(canvas, "-background", "#483D8B")
 
    ## <img  alt="skills"  height="40" src="https://github.com/DIGOARTHUR/GUI-for-R/assets/59892368/5f83a61f-3d98-40cb-8d77-9ac71327baf4">  Motivation
 
-
+I built this repository to share with the community, especially those who work with the R Language, the possibility of building Graphical Interfaces. This project <cite>[midrangeMCP][4]</cite>, where I collaborated, was the beginning of a search for a construction language for the application of Statistical functionalities. Through research we found Tcl/Tk. I hope it is of good use. Hugs.
 
 
 
