@@ -188,6 +188,30 @@ for ( i in 1:4 )
          fill="both")
 ```
 
+
+----
+
+### Grid Managers, Positions
+<div align="center">
+<img height="350px" alt="bashftreactgit" title="bashftreactgit" src="https://github.com/DIGOARTHUR/GUI-for-R/assets/59892368/6d950f74-9740-46aa-909e-b4c522b058da" />
+</div>
+
+ ```R
+t2 <- tktoplevel()
+tkwm.title(t2,'Grid Managers, Positions')
+heading <- tklabel(t2, text="Registration form")
+l.name <- tklabel(t2, text="Name")
+l.age <- tklabel(t2, text="Age")
+e.name <- tkentry(t2, width=30)
+e.age <- tkentry(t2, width=3)
+tkgrid(heading, columnspan=2)
+tkgrid(l.name, e.name)
+tkgrid(l.age, e.age)
+tkgrid.configure(e.name, e.age, sticky="w")
+tkgrid.configure(l.name, l.age, sticky="e")
+```
+
+
 ----
 
 ### Creating menus
