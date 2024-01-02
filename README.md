@@ -341,6 +341,8 @@ I built this repository to share with the community, especially those who work w
 PS: I want to thank my Advisor [Ben Dêivide](https://bendeivide.github.io/#about), and my [Federal University of São João del-Rei](https://www.ufsj.edu.br). 💜
 
 
+</br>
+</br>
 
    <!-------------------------------------------------------------------->
    <!------------------------------------REFERENCES-------------------->
