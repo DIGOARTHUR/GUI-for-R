@@ -1,0 +1,7 @@
+library(tcltk)
+tt <- tktoplevel()
+tkwm.title(tt,'Simple GUI applicatio and Button')
+lbl <- tklabel(tt, text="Hello, World!")
+tkpack(lbl)
+but <- tkbutton(tt, text="OK")
+tkpack(but)
